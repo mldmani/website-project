@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="header-left">
+            <img src="logo.jpg" alt="Store Logo" class="logo">
+            <h1>Online Shopping Store</h1>
+        </div>
+        <div class="header-right">
+            <button id="profile-btn" onclick="location.href='profile.html'">👤 Profile</button>
+		<button id="logout-btn" onclick="logoutUser()">🚪 Logout</button>
+<button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </div>
+	<a href="h.html" id="specialLink">_</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="productss">
+        <a href="h.html" id="specialLink">home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="home.html" id="specialLink">electronic product</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="jewellary.html" id="specialLink">jewellary</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="books.html" id="specialLink">books</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="kids.html" id="specialLink"><u>kids</u></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="aboutus.html" id="specialLink">about us</a>
+    </div>
+</header>
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="pic/toycar.jpg" alt="Product 1">
+        <h3>TOY CAR</h3>
+        <p>$30</p>
+        <button class="add-to-cart" data-product-id="1" data-product-name="TOY CAR" data-product-price="30">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="pic/doctorsettoy.jpg" alt="Product 2">
+        <h3>DOCTOR SET TOY</h3>
+        <p>$27</p>
+        <button class="add-to-cart" data-product-id="2" data-product-name="DOCTOR SET TOY" data-product-price="27">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="pic/learningeducationtoy.jpg" alt="Product 3">
+        <h3>LEARNING EDUCATION TOY</h3>
+        <p>$40</p>
+        <button class="add-to-cart" data-product-id="3" data-product-name="LEARNING EDUCATION TOY" data-product-price="40">Add to Cart</button>
+      </div>
+    </section>
+<section class="products">
+      <div class="product">
+        <img src="pic/1.webp" alt="Product 1">
+        <h3>AGANTA POP</h3>
+        <p>$25</p>
+        <button class="add-to-cart" data-product-id="1" data-product-name="AGANTA POP" data-product-price="25">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="pic/2.webp" alt="Product 2">
+        <h3>TEETHER TOY</h3>
+        <p>$60</p>
+        <button class="add-to-cart" data-product-id="2" data-product-name="TEETHER TOY" data-product-price="60">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="pic/puzzletoys.jpg" alt="Product 3">
+        <h3>PUZZLE TOY</h3>
+        <p>$55</p>
+        <button class="add-to-cart" data-product-id="3" data-product-name="PUZZLE TOY" data-product-price="55">Add to Cart</button>
+      </div>
+    </section>
+    <div id="cart" class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="total-price">0</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
